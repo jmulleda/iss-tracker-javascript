@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="navbar-area">
+                <div class="logo">
+                    <a href="#">International Space Station Tracker</a>
+                </div>
+                <div class="navbar">
+                    <div class="navbar">
+                        <a class="active" href="#">Home</a>
+                        <a href="#">About Me</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="container">
+            <div id="left">
+                <img src="./images/iss.png" id="center">
+                <h3>Live Data Feed</h3>
+                <div id="iss-data">
+                    <p><strong>Time Stamp:</strong> <span id='timestamp'></span></p>
+                    <p><strong>Longitude:</strong> <span id='longitude'></span> °</p>
+                    <p><strong>Latitude:</strong> <span id='latitude'></span> °</p>
+                    <p><strong>Altitude:</strong> <span id='altitude'></span> km</p>
+                    <p><strong>Speed:</strong> <span id='speed'></span> km/h</p>
+                </div>
+                <h3>Astronauts Onboard</h3><br>
+                <div id='astronaut-list'>
+                </div><br>
+                <p>The International Space Station Program brings together international flight crews, multiple launch vehicles, globally distributed launch and flight operations, training, engineering, and development facilities, communications networks, and the international scientific research community.</p><br>
+                <p>APIs Used:</p>
+                <p>ISS API, Open Notify API & Google Maps API</p>
+            </div>
+            
+            <div id="right">
+                <div id='map'></div>
+            </div>
+        </div>    
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYs2dQrIO9Qk-Q2CbFAW8unVlO6n8LrTg&callback=initMap"
+            async defer></script>
+        <script src="script.js"></script>
+
+        <footer>
+            <div class="footer-area">
+                    <a class="active" href="#">&copy; 2023 Jonathan Mulleda | All Rights Reserved</a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
